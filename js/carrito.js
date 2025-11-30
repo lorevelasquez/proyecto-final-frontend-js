@@ -2,13 +2,12 @@ import { obtenerCarrito } from "./storage.js";
 import { eliminarProducto, vaciarCarrito } from "./funcionesCarrito.js";
 import { actualizarContador } from "./ui.js";
 
-const abrirCarrito = document.getElementById("btn-carrito");
 const panel = document.getElementById("carrito-panel");
 const lista = document.getElementById("carrito-lista");
 const totalTxt = document.getElementById("carrito-total");
 const btnVaciar = document.getElementById("vaciar-carrito");
 
-function renderCarrito() {
+export function renderCarrito() {   //  << EXPORTADA PARA USO EN index.js
     const carrito = obtenerCarrito();
     lista.innerHTML = "";
     let total = 0;
@@ -44,5 +43,3 @@ btnVaciar.addEventListener("click", () => {
     vaciarCarrito();
     renderCarrito();
 });
-
-export { renderCarrito };
