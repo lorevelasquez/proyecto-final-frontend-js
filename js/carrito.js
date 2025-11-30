@@ -40,12 +40,9 @@ function renderCarrito() {
     actualizarContador(carrito);
 }
 
-abrirCarrito.addEventListener("click", () => {
-    panel.classList.toggle("visible");
-    renderCarrito();
-});
-
 btnVaciar.addEventListener("click", () => {
     vaciarCarrito();
     renderCarrito();
 });
+
+export { renderCarrito };
