@@ -7,7 +7,7 @@ const lista = document.getElementById("carrito-lista");
 const totalTxt = document.getElementById("carrito-total");
 const btnVaciar = document.getElementById("vaciar-carrito");
 
-export function renderCarrito() {   //  << EXPORTADA PARA USO EN index.js
+export function renderCarrito() { 
     const carrito = obtenerCarrito();
     lista.innerHTML = "";
     let total = 0;
