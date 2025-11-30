@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff0f5;
+  color: #555;
+  line-height: 1.5;
+}
+
+/*----------------------------------------------------*/
+/*                     HEADER                         */
+/*----------------------------------------------------*/
+
+.header {
+  background-color: #dff6ff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header_logo {
+    font-family: 'Baloo 2', cursive;
+    color: #7a6ad8;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+}
+
+.header_logo i {
+    font-size: 2rem;
+}
+
+.header_nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.header_nav a {
+  font-family: 'Baloo 2', cursive;
+  text-decoration: none;
+  color: #7a6ad8;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.header_nav a:hover {
+  color: #bfa2db;
+}
+
+/*----------------------------------------------------*/
+/*                     MAIN                           */
+/*----------------------------------------------------*/
+
+/* SECCIONES */
+
+.home,
+.contacto{
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-bottom: 0;
+}
+
+.home h2 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 2.5rem;
+  color: #a26ba9;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.productos-home h2 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 2rem;
+  color: #a26ba9;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  gap: 30px;
+}
+
+.product-card {
+  flex: 0 0 300px;
+  background-color: white;
+  border: 2px solid #f3c4fb;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #7a6ad8;
+}
+
+.product-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 0.3rem 0;
+}
+
+.btn-info a {
+    background-color: #a085d1;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.btn-info a:hover {
+    background-color: #b8c0ff;
+}
+
+
+/* icono carrito */
+.btn-carrito {
+  position: relative;
+  cursor: pointer;
+  font-size: 22px; /* ajustable */
+}
+
+.btn-carrito:hover {
+  color: #ff9bd6;
+}
+
+/* Burbuja contador */
+#contador-carrito {
+  background: #ff8ad9;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 5px;
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  min-width: 15px;
+  text-align: center;
+}
+
+#carrito-panel{
+  width: 320px;
+  background: #fff0f5;
+  border-left: 3px solid #f3c4fb;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  height: 100vh;
+  padding: 1.5rem;
+  overflow-y: auto;
+  transition: .4s;
+  color:#7a6ad8;
+}
+
+#carrito-panel.visible{
+  right: 0;
+}
+
+#carrito-panel h2{
+  text-align: center;
+  font-family: 'Baloo 2';
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+}
+
+#carrito-lista .carrito-item{
+  display: flex;
+  align-items:center;
+  gap: 10px;
+  border-bottom:1px solid #f3c4fb;
+  padding:10px 0;
+}
+
+#carrito-lista img{
+  width:50px;
+  border-radius:8px;
+}
+
+.carrito-item button{
+  background:#ff8ad9;
+  color:white;
+  border:none;
+  padding:5px 8px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.btn-vaciar{
+  width:100%;
+  background:#a085d1;
+  color:white;
+  padding:10px;
+  border-radius:8px;
+  font-size:1.2rem;
+}
+
+/*----------------------------------------------------*/
+/*                     CONTACTO                       */
+/*----------------------------------------------------*/
+.titulo-contacto {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    color: #a26ba9;
+}
+
+.form {
+    background: #fdd7e4;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+}
+.fs-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.fs-field label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #7a6ad8;
+}
+
+.fs-field input,
+.fs-field textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #f3c4fb;
+    border-radius: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
+
+/* Botón */
+.form button {
+    background: #a085d1;
+    color: white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.form button:hover {
+    background: #bfa2db;
+    transform: scale(1.05);
+}
+
+/*----------------------------------------------------*/
+/*                     FOOTER                         */
+/*----------------------------------------------------*/
+.footer {
+  background-color: #dff6ff;
+  color: #7a6ad8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 2px solid #e8d9ff;
+}
+
+/* texto */
+.footer p {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* lista de redes */
+.footer_social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer_social li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+/* íconos */
+.footer_social a {
+  font-family: 'Baloo 2', cursive;
+  color: #7a6ad8;
+  font-size: 1.3rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer_social a:hover {
+  color: #bfa2db;
+  transform: scale(1.1);
+}
+
+
+/*----------------------------------------------------*/
+/*                     RESPONSIVE                     */
+/*----------------------------------------------------*/
+
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 15px 10px;
+  }
+
+  .header_logo{
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header_nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .product-img {
+    height: auto;
+  }
+
+  .form {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #carrito-panel {
+    width: 100%;
+  }
+
+}

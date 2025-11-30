@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KiraKira Store</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9cd7f0d7c6.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <!-- css externo -->
+    <link rel="stylesheet" href="../css/style.css"/>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header_logo">
+        <a href="../index.html" style="text-decoration:none; color:inherit;">
+          <i class="fa-solid fa-star-and-crescent"></i> KiraKira
+        </a>
+      </h1>
+
+      <nav class="header_nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li>
+            <a id="btn-carrito" class="btn-carrito">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span id="contador-carrito">0</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+
+
+    <main>
+      <section class="seccion-contacto">
+        <h2 class="titulo-contacto">Contacto</h2>
+
+        <form
+          action="https://formspree.io/f/mnnbkjrz"
+          class="form"
+          method="POST"
+        >
+          <div class="fs-field">
+            <label for="name">Nombre completo *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Amelia Watson"
+              required
+            />
+          </div>
+
+          <div class="fs-field">
+            <label for="email">Correo *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+
+          <div class="fs-field">
+            <label for="phone">Teléfono</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+54 9 11 3444-5555"
+            />
+          </div>
+
+          <div class="fs-field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..."></textarea>
+          </div>
+
+          <input type="hidden" name="subject" value="Nuevo contacto desde tu página"/>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>KiraKira Store 2025&copy; - Todos los derechos reservados.</p>
+      <nav>
+        <ul class="footer_social">
+          <li>Seguinos en:</li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://x.com/" target="_blank" aria-label="x">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

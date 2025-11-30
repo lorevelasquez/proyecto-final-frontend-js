@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "nombre": "Blind Box Miku",
+    "descripcion": "Blind Box temática de Hatsune Miku edición Halloween.",
+    "precio": "15000",
+    "img": "img/miku_halloween.png"
+  },
+  {
+    "id": "2",
+    "nombre": "Llavero Jujutsu Kaisen",
+    "descripcion": "Llavero de Jujutsu Kaisen para mochilas y llaves.",
+    "precio": "9500",
+    "img": "img/jujutsu_colgante.png"
+  },
+  {
+    "id": "3",
+    "nombre": "Peluche Miku Burger",
+    "descripcion": "Peluche de Miku con temática hamburguesa.",
+    "precio": "18000",
+    "img": "img/miku_burger.png"
+  },
+  {
+    "id": "4",
+    "nombre": "Cartera Kitty Rosa",
+    "descripcion": "Bolso rosa inspirado en Hello Kitty, ideal para uso diario.",
+    "precio": "35000",
+    "img": "img/bolso_kitty_r.png"
+  },
+  {
+    "id": "5",
+    "nombre": "Peluche Ovejita Kitty",
+    "descripcion": "Kitty vestida de ovejita, tierna y suave.",
+    "precio": "10500",
+    "img": "img/corderito_kitty.jpg"
+  },
+  {
+    "id": "6",
+    "nombre": "Morral Haikyuu",
+    "descripcion": "Morral de Haikyuu para guardar de todo.",
+    "precio": "36500",
+    "img": "img/bolso_haikyuu.jpg"
+  }
+]

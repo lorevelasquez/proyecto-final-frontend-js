@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KiraKira Store</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9cd7f0d7c6.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <!-- css externo -->
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header_logo">
+        <a href="./index.html" style="text-decoration:none; color:inherit;">
+          <i class="fa-solid fa-star-and-crescent"></i> KiraKira
+        </a>
+      </h1>
+
+      <nav class="header_nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li>
+            <a id="btn-carrito" class="btn-carrito">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span id="contador-carrito">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home">
+        <h2>Bienvenidos a KiraKira Store</h2>
+        <p>
+          ¡Tu mundo kawaii te espera! Descubrí peluches, accesorios y todo lo que te gusta en un solo lugar
+        </p>
+      </section>
+
+      <section id="productos" class="productos-home">
+        <h2> Productos destacados </h2>
+
+        <section class="cards-container">
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="./img/miku_halloween.png"
+              alt="Blind Box Miku Halloween"
+            />
+            <h3>Blind Box Miku</h3>
+            <p>Precio: $15.000</p>
+            <p class="btn-info"><a href="#">Comprar</a></p>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="./img/jujutsu_colgante.png"
+              alt="Llavero de Jujutsu Kaisen"
+            />
+            <h3>Llavero Jujutsu Kaisen</h3>
+            <p>Precio: $9.500</p>
+            <p class="btn-info"><a href="#">Comprar</a></p>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="./img/miku_burger.png"
+              alt="Peluche de Miku Hamburguesa"
+            />
+            <h3>Peluche Miku Burger</h3>
+            <p>Precio: $18.000</p>
+            <p class="btn-info"><a href="#">Comprar</a></p>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="./img/bolso_kitty_r.png"
+              alt="Cartera de Kitty Rosa"
+            />
+            <h3>Cartera Kitty Rosa</h3>
+            <p>Precio: $35.000</p>
+            <p class="btn-info"><a href="#">Comprar</a></p>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="./img/corderito_kitty.jpg"
+              alt="Peluche de Ovejita Kitty"
+            />
+            <h3>Peluche Ovejita Kitty</h3>
+            <p>Precio: $10.500</p>
+            <p class="btn-info"><a href="#">Comprar</a></p>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="./img/bolso_haikyuu.jpg"
+              alt="Morral Haikyuu"
+            />
+            <h3>Morral haikyuu</h3>
+            <p>Precio: $36.500</p>
+            <p class="btn-info"><a href="#">Comprar</a></p>
+          </article>
+        </section>
+      </section>
+
+    </main>
+
+    <div id="carrito-panel">
+      <h2>Carrito</h2>
+      <div id="carrito-lista"></div>
+      <p class="total">Total: <span id="carrito-total">$0</span></p>
+      <button id="vaciar-carrito" class="btn-vaciar">Vaciar</button>
+    </div>
+
+    <footer class="footer">
+      <p>KiraKira Store 2025&copy; - Todos los derechos reservados.</p>
+      <nav>
+        <ul class="footer_social">
+          <li>Seguinos en:</li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://x.com/" target="_blank" aria-label="x">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </footer>
+
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/carrito.js"></script>
+
+  </body>
+</html>
