@@ -1,8 +1,0 @@
-export const productos = [
-  { nombre: "Blind Box Miku", img: "./img/miku_halloween.png", precio: 15000 },
-  { nombre: "Llavero Jujutsu Kaisen", img: "./img/jujutsu_colgante.png", precio: 9500 },
-  { nombre: "Peluche Miku Burger", img: "./img/miku_burger.png", precio: 18000 },
-  { nombre: "Cartera Kitty Rosa", img: "./img/bolso_kitty_r.png", precio: 35000 },
-  { nombre: "Peluche Ovejita Kitty", img: "./img/corderito_kitty.jpg", precio: 10500 },
-  { nombre: "Morral Haikyuu", img: "./img/bolso_haikyuu.jpg", precio: 36500 }
-];

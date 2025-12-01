@@ -10,6 +10,10 @@ const renderizarCarrito = () => {
   const contenedor = document.getElementById("contenedor-carrito");
   const resumenDiv = document.getElementById("resumen-carrito");
 
+  if (!layout || !contenedor || !resumenDiv) {
+    return;
+  }
+
   contenedor.innerHTML = "";
   resumenDiv.innerHTML = "";
 
@@ -74,7 +78,6 @@ const renderizarCarrito = () => {
   totalHTML.textContent = `Total: $ ${totalCompra.toLocaleString("es-AR")}`;
   resumenDiv.appendChild(totalHTML);
 
-  // botón vaciar carrito
   const btnVaciar = document.createElement("button");
   btnVaciar.classList.add("btn-carrito", "btn-vaciar-carrito");
   btnVaciar.textContent = "Vaciar carrito 🗑️";

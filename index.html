@@ -1,93 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KiraKira Store</title>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/9cd7f0d7c6.js" crossorigin="anonymous"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./img/favicon.png">
-    <!-- css externo -->
-    <link rel="stylesheet" href="./css/style.css"/>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KiraKira Store</title>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9cd7f0d7c6.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-  <body>
-    <header class="header">
-      <h1 class="header_logo">
-        <a href="./index.html" style="text-decoration:none; color:inherit;">
-          <i class="fa-solid fa-star-and-crescent"></i> KiraKira
-        </a>
-      </h1>
+<body>
 
-      <nav class="header_nav">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
-          <li>
-            <a id="btn-carrito" class="btn-carrito">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <span id="contador-carrito">0</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="header_logo">
+      <a href="./index.html" style="text-decoration:none; color:inherit;">
+        <i class="fa-solid fa-star-and-crescent"></i> KiraKira
+      </a>
+    </h1>
 
-    <main>
-      <section class="home">
-        <h2>Bienvenidos a KiraKira Store</h2>
-        <p>
-          ¡Tu mundo kawaii te espera! Descubrí peluches, accesorios y todo lo que te gusta en un solo lugar
-        </p>
-      </section>
+    <nav class="header_nav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/contacto.html">Contacto</a></li>
 
-      <section id="productos" class="productos-home">
-        <h2> Productos destacados </h2>
-        <section class="cards-container">
-        </section>
-      </section>
+        <li>
+          <a href="./pages/carrito.html" id="btn-carrito" class="btn-carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    </main>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section class="home">
+      <h2>Bienvenidos a KiraKira Store</h2>
+      <p>
+        ¡Tu mundo kawaii te espera! Descubrí peluches, accesorios y todo lo que te gusta en un solo lugar.
+      </p>
+    </section>
 
-    <div id="carrito-panel">
-      <h2>Carrito</h2>
-      <div id="carrito-lista"></div>
-      <p class="total">Total: <span id="carrito-total">$0</span></p>
-      <button id="vaciar-carrito" class="btn-vaciar">Vaciar</button>
-    </div>
+    <section id="productos" class="productos-home">
+      <h2>Productos destacados</h2>
 
-    <footer class="footer">
-      <p>KiraKira Store 2025&copy; - Todos los derechos reservados.</p>
-      <nav>
-        <ul class="footer_social">
-          <li>Seguinos en:</li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
+      <section id="cards-container" class="cards-container"></section>
+    </section>
+  </main>
 
-          <li>
-            <a href="https://x.com/" target="_blank" aria-label="x">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-          </li>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>KiraKira Store 2025&copy; - Todos los derechos reservados.</p>
 
-          <li>
-            <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
-              <i class="fa-brands fa-tiktok"></i>
-            </a>
-          </li>
+    <nav>
+      <ul class="footer_social">
+        <li>Seguinos en:</li>
 
-        </ul>
-      </nav>
-    </footer>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
 
-    <script type="module" src="./js/index.js"></script>
-    <script type="module" src="./js/carrito.js"></script>
+        <li>
+          <a href="https://x.com/" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
 
-  </body>
+        <li>
+          <a href="https://www.tiktok.com/" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script type="module" src="./js/index.js"></script>
+
+</body>
 </html>
