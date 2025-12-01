@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KiraKira Store - Carrito</title>
+
+  <script src="https://kit.fontawesome.com/9cd7f0d7c6.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+
+<body>
+  
+  <header class="header">
+    <h1 class="header_logo">
+      <a href="../index.html" style="text-decoration:none; color:inherit;">
+        <i class="fa-solid fa-star-and-crescent"></i> KiraKira
+      </a>
+    </h1>
+
+    <nav class="header_nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li>
+          <a href="./carrito.html" id="btn-carrito" class="btn-carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="seccion-carrito">
+
+      <h2 class="titulo-carrito">Carrito de Compras</h2>
+
+      <div class="carrito-layout">
+
+        <!-- lista de productos -->
+        <div id="contenedor-carrito" class="carrito-lista"></div>
+
+        <!-- resumen -->
+        <aside id="resumen-carrito" class="carrito-resumen"></aside>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>KiraKira Store 2025&copy; - Todos los derechos reservados.</p>
+    <nav>
+      <ul class="footer_social">
+        <li>Seguinos en:</li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script type="module" src="../js/carrito.js"></script>
+
+</body>
+</html>
